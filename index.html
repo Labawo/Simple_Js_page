@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Home page</title>
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <div class="topnav">
+        <div class = "logo-div">
+            <img class = "img" src="images/logosmaller.png" alt="logo">
+        </div>
+        
+
+        <div class="topnav-right">
+            <a class = "active" href="index.html">Home</a>
+            <a href="pages/section2.html">Theory</a>
+            <a href="pages/section3.html">Quizzes</a>
+            <a href="pages/about.html">About</a>
+        </div>
+        
+    </div>
+
+    <div class="intro-div">
+
+        <h1>And the journey begins</h1>
+
+        <div class="plain-text">
+            <p>CS is a huge field with many specialities so it is not really clear where to start and where to stop. So lets talk about 10 professions that I found from the internet.</p>
+        </div>
+        
+
+        <h1>CS fields</h1>
+
+        <div class="jobs_div">
+
+            <div class="jobs">
+                <h2>Software Developer</h2>
+    
+                <div class="button-div" id="bd1" onclick="showMoreFunction('bd1', 'jt1', 'lbd1')">
+                    <button class="show-btn">show more</button>
+                </div>
+                
+                <div class="jobs-text" id="jt1" style="display:none">
+                    Software Developers are tasked with creating and developing websites, programs, and other applications that run on computers or other devices.<br><br>
+                    Skills: A strong background in computer programming is highly recommended for these positions. Interpersonal skills to collaborate with others on projects and being detail oriented to be able to juggle multiple aspects are also highly valued. 
+                </div>
+    
+                <div class="button-div" id="lbd1" onclick="showLessFunction('bd1', 'jt1', 'lbd1')" style="display:none">
+                    <button class="show-less-btn">show less</button>
+                </div>
+    
+            </div>
+    
+            <div class="jobs">
+                <h2>Software engineer</h2>
+                
+                <div class="button-div" id="bd2" onclick="showMoreFunction('bd2', 'jt2', 'lbd2')">
+                    <button class="show-btn">show more</button>
+                </div>
+    
+                <div class="jobs-text" id="jt2" style="display:none">
+                    Web Developers are programmers that are concentrated on coding, designing, and building out the layout of a website.<br><br>
+                    Skills: Knowledge of HTML/CSS, Javascript, and other programming languages is essential for this role. It’s also important to have knowledge of graphic design and a collaborative mindset while working with other designers on projects.
+                </div>
+    
+                <div class="button-div" id="lbd2" onclick="showLessFunction('bd2', 'jt2', 'lbd2')" style="display:none">
+                    <button class="show-less-btn">show less</button>
+                </div>
+            </div>
+    
+            <div class="jobs">
+                <h2>UX Designer</h2>
+                
+                <div class="button-div" id="bd3" onclick="showMoreFunction('bd3', 'jt3', 'lbd3')">
+                    <button class="show-btn">show more</button>
+                </div>
+    
+                <div class="jobs-text" id="jt3" style="display:none">
+                    UX Designers are in charge of creating significant and relevant experiences for users of a particular product or platform. They’re part of the reason why you love your favorite apps and their interfaces.<br><br>
+                    Skills: Knowledge of programming and computer systems can greatly aid your success in this role–this expertise makes it easier to translate your design vision to your team. Additionally, it helps if you’re well-versed in user empathy, which allows you to see the product as the future users would and adjust accordingly.
+                </div>
+    
+                <div class="button-div" id="lbd3" onclick="showLessFunction('bd3', 'jt3', 'lbd3')" style="display:none">
+                    <button class="show-less-btn">show less</button>
+                </div>
+            </div>
+    
+            <div class="jobs">
+                <h2>Mobile App Developer</h2>
+                
+                <div class="button-div" id="bd4" onclick="showMoreFunction('bd4', 'jt4', 'lbd4')">
+                    <button class="show-btn">show more</button>
+                </div>
+    
+                <div class="jobs-text" id="jt4" style="display:none">
+                    Mobile App Developers are similar to Web Developers, except their area of expertise is creating, coding, and testing for mobile applications.<br><br>
+                    Skills: Besides the basics of strong analytical skills and coding knowledge, it’s good to know both programmatic languages—Java (for Androids) and Objective-C (for iPhones)—for sake of range.
+                </div>
+    
+                <div class="button-div" id="lbd4" onclick="showLessFunction('bd4', 'jt4', 'lbd4')" style="display:none">
+                    <button class="show-less-btn">show less</button>
+                </div>
+            </div>
+    
+            <div class="jobs">
+                <h2>IT Project Manager</h2>
+                
+                <div class="button-div" id="bd5" onclick="showMoreFunction('bd5', 'jt5', 'lbd5')">
+                    <button class="show-btn">show more</button>
+                </div>
+    
+                <div class="jobs-text" id="jt5" style="display:none">
+                    IT Project Managers are in charge of planning, budgeting, and basically running an organization’s IT goals and initiatives.<br><br>
+                    Skills: Strong leadership skills are vital in this role. As the IT Project Manager, you will be responsible for not only heading up a team, but guiding, hiring, and making decisions for the interest of all.
+                </div>
+    
+                <div class="button-div" id="lbd5" onclick="showLessFunction('bd5', 'jt5', 'lbd5')" style="display:none">
+                    <button class="show-less-btn">show less</button>
+                </div>
+            </div>
+    
+            <div class="jobs">
+                <h2>Information Security Analyst</h2>
+            
+                <div class="button-div" id="bd6" onclick="showMoreFunction('bd6', 'jt6', 'lbd6')">
+                    <button class="show-btn">show more</button>
+                </div>
+    
+                <div class="jobs-text" id="jt6" style="display:none">
+                    Information Security Analysts are in charge of implementing systems of safety and protecting a company’s computer networks.<br><br>
+                    Skills: Being meticulous and detail-oriented in your work is mandatory for success in this role, as a whole organization’s security is on the line. Being able to predict outcomes and adjust security accordingly is also key. 
+                </div>
+    
+                <div class="button-div" id="lbd6" onclick="showLessFunction('bd6', 'jt6', 'lbd6')" style="display:none">
+                    <button class="show-less-btn">show less</button>
+                </div>
+            </div>
+    
+            <div class="jobs">
+                <h2>Systems Architect</h2>
+                
+                <div class="button-div" id="bd7" onclick="showMoreFunction('bd7', 'jt7', 'lbd7')">
+                    <button class="show-btn">show more</button>
+                </div>
+    
+                <div class="jobs-text" id="jt7" style="display:none">
+                    Systems Architects analyze a company holistically and figure out how to bring the best possible IT strategy for their department’s goals. They define and design the architecture of said system to create the highest quality experience possible.<br><br>
+                    Skills: To succeed as a Systems Architect, you need the ability to critically analyze the objectives of a business and identify the scale of resources it will require on all sides. Being able to troubleshoot, assess, and translate customer needs is also good to have.
+                </div>
+    
+                <div class="button-div" id="lbd7" onclick="showLessFunction('bd7', 'jt7', 'lbd7')" style="display:none">
+                    <button class="show-less-btn">show less</button>
+                </div>
+            </div>
+    
+            <div class="jobs">
+                <h2>AI Engineer</h2>
+                
+                <div class="button-div" id="bd8" onclick="showMoreFunction('bd8', 'jt8', 'lbd8')">
+                    <button class="show-btn">show more</button>
+                </div>
+    
+                <div class="jobs-text" id="jt8" style="display:none">
+                    AI (Artificial Intelligence) Engineers create, test, and develop computer systems with a goal of mimicking human intelligence in said systems.<br><br>
+                    Skills: Programming is at the heart of this role,, alongside a strong understanding of software development, linear algebra, probability, and statistics.
+                </div>
+    
+                <div class="button-div" id="lbd8" onclick="showLessFunction('bd8', 'jt8', 'lbd8')" style="display:none">
+                    <button class="show-less-btn">show less</button>
+                </div>
+            </div>
+            
+            <div class="jobs">
+                <h2>Computer Hardware Engineer</h2>
+                
+                <div class="button-div" id="bd9" onclick="showMoreFunction('bd9', 'jt9', 'lbd9')">
+                    <button class="show-btn">show more</button>
+                </div>
+    
+                <div class="jobs-text" id="jt9" style="display:none">
+                    Computer Hardware Engineers are responsible for designing, researching, developing, and building computer systems and components like chips, memory devices, and circuit boards.<br><br>
+                    Skills: You need solid technical and analytical skills, and a strong spirit of collaboration when working with software developers on developing projects.
+                </div>
+    
+                <div class="button-div" id="lbd9" onclick="showLessFunction('bd9', 'jt9', 'lbd9')" style="display:none">
+                    <button class="show-less-btn">show less</button>
+                </div>
+            </div>
+    
+            <div class="jobs">
+                <h2>Video Game Developer</h2>
+                
+                <div class="button-div" id="bd10" onclick="showMoreFunction('bd10', 'jt10', 'lbd10')">
+                    <button class="show-btn">show more</button>
+                </div>
+    
+                <div class="jobs-text" id="jt10" style="display:none">
+                    These developers are the coding heroes behind the games you play in your free time. They code on various systems and conceptualize with other developers  to create playable games.<br><br>
+                    Skills: Storytelling skills, along with the ability to conceptualize both plot and design, are key to this role. It’s valuable to have a vision and ideas for executing it well, not simply know the programmatic language.
+                </div>
+    
+                <div class="button-div" id="lbd10" onclick="showLessFunction('bd10', 'jt10', 'lbd10')" style="display:none">
+                    <button class="show-less-btn">show less</button>
+                </div>
+            </div>
+
+        </div>
+        
+        
+
+        <div class="wts_div">
+            <h1>Where to start</h1>
+
+            <div class = "plain-text">
+                <p>
+                    As I have showed you professions above, I think you will start to understand how hard it is to decide where to start. But I like to follow an old saying: <br><br>
+                    <i>"How do you eat an animal? One bite at a time."</i> <br><br>
+                    So start small. And for me choosing between frontend and backend was a manageble task. <br><br>
+                    And if you still can't decide maybe flipping a coin will help:<br><br>
+                
+                </p>
+                <div class="center-container">
+                    <div class="container">
+                        <div class="stats">
+                            <p id="heads-count">Heads : 0</p>
+                            <p id="tails-count">Tails : 0</p>
+                        </div>
+                        <div class="coin">
+                            <div class="heads">
+                                <img src="images/heads.png" height="150" width="350" alt="Heads">
+                            </div>
+                            <div class="tails">
+                                <img src="images/tails.png" height="150" width="350" alt="Tails">
+                            </div>
+                            
+                        </div>
+                        <div class="coin-buttons">
+                            <button id="flip-button">
+                                Flip Coin
+                            </button>
+                            <button id="reset-button">
+                                Reset
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+        </div>
+
+        
+    </div>
+
+    <div class="footer">hi</div>
+    
+</body>
+</html>

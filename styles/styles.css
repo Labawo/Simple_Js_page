@@ -1,0 +1,387 @@
+body 
+{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #c5a20a;
+}
+  
+.topnav 
+{
+    overflow: hidden;
+    background-color: #000000;
+    padding-bottom:0px;
+}
+
+.footer 
+{ 
+    background-color: #000000;
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.topnav a 
+{
+    float: left;
+    color: #f2f2f2;
+    text-align: right;
+    padding: 14px 18px;
+    text-decoration: none;
+    font-size: 17px;
+    padding-bottom: 18px;
+}
+
+.topnav a:hover 
+{
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active 
+{
+    background-color: #c5a20a;
+    color: black;
+}
+
+.topnav-right 
+{
+    float: right;
+    padding-bottom: 0px;
+}
+
+.img
+{
+    width:100%;
+    height: 100%;
+}
+
+.logo-div
+{
+    width:75px;
+    height:auto;
+    display: inline-block;
+}
+
+.intro-div
+{
+    width: 50%;
+    margin: auto;
+}
+
+.quiz-div
+{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.photo-div
+{
+    border: solid black;
+    float: left;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.one 
+{
+    background-image: url('../images/profile.png');
+}
+
+.jobs_div 
+{
+    margin-left: auto;
+}
+
+.wts_div 
+{
+    margin-top: 25px;
+    float:left;
+    margin-bottom: 25px;
+}
+
+.jobs 
+{
+    width: 50%;
+    margin-left: auto;
+    float: left;
+}
+
+.right 
+{
+    float: right;
+}
+
+.quizes
+{
+    background-color: rgba(215, 215, 168, 0.693);
+    padding : 50px;
+    margin: 25px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+}
+
+.jobs, .quizes h2
+{
+    text-align: center;
+}
+
+.quizes h2
+{
+    font-size: medium;
+}
+
+.jobs, .plain-text, .about-text
+{
+    background-color: rgba(215, 215, 168, 0.693);
+    padding : 8px;
+    margin: 5px;
+    border-radius: 35px;
+}
+
+.about-me-text
+{
+    background-color: rgba(215, 215, 168, 0.693);
+    padding : 8px;
+    margin: 5px;
+    border-radius: 35px;
+    margin-left: 250px;
+}
+
+.show-btn, .show-less-btn, .quiz-button
+{
+    font-weight: bold;
+    padding:5px;
+    background-color: black;
+    color : #c5a20a;
+    border: none;
+    border-radius: 15px;
+    cursor:pointer;
+}
+
+.show-btn:hover, .show-less-btn:hover, .quiz-button:hover
+{
+    background-color: white;
+    color:black;
+}
+
+.button-div, .center-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.jobs-text 
+{
+    padding: 8px;
+    text-align: center;
+}
+
+.container
+{
+    background-color: white;
+    width: 400px;
+    padding: 50px;
+    /* position: absolute; */
+    /* transform: translate(-50%, -50%); */
+    /* top: 50%; */
+    /* left: 50%; */
+    box-shadow: 15px 30px 35px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    /* -webkit-perspective: 300px;
+    perspective: 300px; */
+}
+
+.coin
+{
+    border: none;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    margin: 50px auto;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.coin img
+{
+    width: 145px;
+}
+
+.heads, .tails
+{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.tails
+{
+    transform: rotateX(180deg);
+}
+
+@keyframes spin-tails
+{
+    0%{
+        transform: rotateX(0);
+    }
+    100%{
+        transform: rotateX(1980deg);
+    }
+}
+
+@keyframes spin-heads
+{
+    0%{
+        transform: rotateX(0);
+    }
+    100%{
+        transform: rotateX(2160deg);
+    }
+}
+
+.coin-buttons
+{
+    display:flex;
+    justify-content: space-between;
+}
+
+#flip-button, #reset-button
+{
+    width: 120px;
+    padding: 10px 0;
+    border: 2.5px solid gold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* * {box-sizing:border-box} */
+
+/* Slideshow container */
+.slideshow-container 
+{
+  max-width: 1564px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides 
+{
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next 
+{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next 
+{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover 
+{
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text 
+{
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  margin-left: 15px;
+  margin-right: 15px;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  left: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext 
+{
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot 
+{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover 
+{
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade 
+{
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade 
+{
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.wrapper 
+{
+    display :block;
+    float: right;
+}
+
+.slide-link
+{
+    outline: none;
+    color: #f2f2f2;
+}
